@@ -36,17 +36,19 @@ box-sizing:border-box;
 }
 
 
-body{
-font-family:'Inter',sans-serif;
-background:linear-gradient(135deg,#090c18,#11152b);
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:30px;
-overflow:hidden;
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #090c18, #11152b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    
+    /* Change overflow: hidden to these lines: */
+    overflow-y: auto;  /* Allows vertical scrolling when content leaks out */
+    overflow-x: hidden; /* Still prevents weird side-to-side horizontal layout breaks */
 }
-
 
 .heart {
     position: fixed;
