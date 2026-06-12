@@ -147,14 +147,15 @@
             </div>
 
            <div class="video-area" id="videoArea">
-    <iframe 
-        src="https://drive.google.com/file/d/1--qyO39wSGt7hrMWmpKW9MBSoA915aGi/preview" 
-        width="100%" 
-        height="100%" 
-        allow="autoplay" 
-        frameborder="0" 
-        allowfullscreen>
-     Clyde</iframe>
+              <script>
+function goToVideo() {
+    // Replace this with your actual Google Drive share link
+    const videoUrl = "https://drive.google.com/file/d/1--qyO39wSGt7hrMWmpKW9MBSoA915aGi/view?t=5.455";
+    
+    // Opens the link in a new tab
+    window.open(videoUrl, '_blank');
+}
+</script>
 </div>
 
             <button class="btn" id="finalBtn" onclick="goTo('s5')">
