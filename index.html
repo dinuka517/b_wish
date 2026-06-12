@@ -124,7 +124,7 @@
         </div>
     </section>
 
-    <!-- Screen 4 -->
+   <!-- Screen 4 -->
     <section class="screen" id="s4">
         <div class="card">
 
@@ -133,30 +133,20 @@
             <h1>Open The Gift</h1>
 
             <div class="gift-area" onclick="openBox()">
-
                 <div class="gift">
-
                     <div class="gift-lid" id="giftLid"></div>
-
                     <div class="gift-body">
                         🎁
                     </div>
-
                 </div>
-
             </div>
 
-           <div class="video-area" id="videoArea">
-              <script>
-function goToVideo() {
-    // Replace this with your actual Google Drive share link
-    const videoUrl = "https://drive.google.com/file/d/1--qyO39wSGt7hrMWmpKW9MBSoA915aGi/view?t=5.455";
-    
-    // Opens the link in a new tab
-    window.open(videoUrl, '_blank');
-}
-</script>
-</div>
+            <!-- Fix: Added an interactive thumbnail/text area that triggers the video link -->
+            <div class="video-area" id="videoArea" onclick="goToVideo()">
+                <div class="video-placeholder">
+                    <span>🎬 Tap here to watch your video surprise!</span>
+                </div>
+            </div>
 
             <button class="btn" id="finalBtn" onclick="goTo('s5')">
                 Continue
@@ -164,7 +154,6 @@ function goToVideo() {
 
         </div>
     </section>
-
     <!-- Screen 5 -->
     <section class="screen" id="s5">
         <div class="card">
@@ -191,7 +180,18 @@ function goToVideo() {
     </section>
 
 </div>
+<script>
+function goToVideo() {
+    // This is your unique Google Drive video link
+    const videoUrl = "https://drive.google.com/file/d/1--qyO39wSGt7hrMWmpKW9MBSoA915aGi/view?t=5.455";
+    
+    // Opens the link cleanly in a new window/tab
+    window.open(videoUrl, '_blank');
+}
+</script>
 
+<script src="new.js"></script>
+</body>
 <script src="new.js"></script>
 
 </body>
