@@ -36,19 +36,17 @@ box-sizing:border-box;
 }
 
 
-body {
-    font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #090c18, #11152b);
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    
-    /* Change overflow: hidden to these lines: */
-    overflow-y: auto;  /* Allows vertical scrolling when content leaks out */
-    overflow-x: hidden; /* Still prevents weird side-to-side horizontal layout breaks */
+body{
+font-family:'Inter',sans-serif;
+background:linear-gradient(135deg,#090c18,#11152b);
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:30px;
+overflow:hidden;
 }
+
 
 .heart {
     position: fixed;
@@ -111,8 +109,6 @@ padding:60px;
 text-align:center;
 box-shadow:0 25px 60px rgba(0,0,0,.4);
 }
-
-
 
 h1{
 font-family:'Cormorant Garamond',serif;
@@ -275,14 +271,28 @@ transform:translateY(-100px) rotate(-15deg);
 opacity:0;
 }
 
-.video-area{
-display:none;
-margin-top:30px;
-padding:40px;
-border-radius:16px;
-background:#202646;
-color:#bbb;
+.video-area {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
+.video-area:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.02);
+}
+
+.video-placeholder {
+    padding: 30px 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
 }
 
 .btn{
